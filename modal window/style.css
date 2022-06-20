@@ -1,0 +1,93 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.flex__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#btn_open {
+    width: 150px;
+    height: 60px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #4CAF50;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn_open:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#wrapper__modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#wrapper__modal.active {
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+#modal__window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+
+.btn_close_style {
+    text-align: center;
+}
+
+#btn_close {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 30px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #bd1f1f;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn_close:hover {
+    background-color: #bd1f1f;
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+}
